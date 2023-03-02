@@ -14,12 +14,9 @@ using System.Windows.Shapes;
 
 namespace diplomnayarrrr.Views
 {
-    /// <summary>
-    /// Логика взаимодействия для AuthorizationWindows.xaml
-    /// </summary>
-    public partial class AuthorizationWindows : Window
+    public partial class AuthorizationWindow : Window
     {
-        public AuthorizationWindows()
+        public AuthorizationWindow()
         {
             InitializeComponent();
         }
