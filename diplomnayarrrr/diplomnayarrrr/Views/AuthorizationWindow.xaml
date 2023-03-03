@@ -93,8 +93,10 @@
             <Button
                 Height="50"
                 Width="250"
-                FontSize="30">
-                Войти
+                FontSize="30"
+                Content="Войти"
+                Style="{StaticResource ButtonStyle1}">
+                
             </Button>
         </Grid>
     </Grid>

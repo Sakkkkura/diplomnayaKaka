@@ -4,8 +4,12 @@
              xmlns:local="clr-namespace:diplomnayarrrr"
              StartupUri="Views.MainWindow.xaml">
     <Application.Resources>
-        <SolidColorBrush x:Key="ColorPrimary">#D8BFD8</SolidColorBrush>
-        <SolidColorBrush x:Key="ColorSecondary">#DA70D6</SolidColorBrush>
-        <SolidColorBrush x:Key="ColorAccent">#9370DB</SolidColorBrush>
+        <ResourceDictionary>
+            <SolidColorBrush x:Key="ColorPrimary">#D8BFD8</SolidColorBrush>
+            
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources\Styles\ButtonStyles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
