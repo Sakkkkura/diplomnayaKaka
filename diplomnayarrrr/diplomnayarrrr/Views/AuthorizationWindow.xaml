@@ -94,9 +94,7 @@
                 Height="50"
                 Width="250"
                 FontSize="30"
-                Content="Войти"
-                Style="{StaticResource ButtonStyle1}">
-                
+                Content="Войти">               
             </Button>
         </Grid>
     </Grid>

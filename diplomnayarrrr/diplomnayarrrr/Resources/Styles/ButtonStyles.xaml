@@ -4,7 +4,7 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="Button">
-                    <Border Background="Aqua"/>
+                    <!--<Border Background="Aqua"/>-->
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
