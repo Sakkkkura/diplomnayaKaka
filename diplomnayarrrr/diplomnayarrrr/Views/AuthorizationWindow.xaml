@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:diplomnayarrrr.Views"
         xmlns:viewModels="clr-namespace:diplomnayarrrr.ViewModels"
         mc:Ignorable="d"
-        Title="AuthorizationWindow"
+        Title="AuthorizationWindow0"
         Height="1000"
         MinHeight="1000"
         Width="800"
