@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:diplomnayarrrr.Views"
+        xmlns:viewModels="clr-namespace:diplomnayarrrr.ViewModels"
         mc:Ignorable="d"
         Title="AuthorizationWindow"
         Height="1000"
@@ -13,6 +14,9 @@
         WindowStartupLocation="CenterScreen"
         FontSize="14"
         FontFamily="Century Gothic">
+    <Window.DataContext>
+        <viewModels:AuthorizationViewModel/>
+    </Window.DataContext>
     <Grid
         Background="{StaticResource ColorPrimary}">
         <Grid.RowDefinitions>
@@ -59,7 +63,8 @@
                 VerticalAlignment="Center"
                 Height="50"
                 Width="300"
-                Margin="8 4 0 8">
+                Margin="8 4 0 8"
+                Text="{Binding Login}">
             </TextBox>
         </Grid>
 
@@ -84,7 +89,8 @@
                 VerticalAlignment="Center"
                 Height="50"
                 Width="300"
-                Margin="8 4 0 8">
+                Margin="8 4 0 8"
+                Text="{Binding Password}">
             </TextBox>
         </Grid>
 
@@ -94,7 +100,8 @@
                 Height="50"
                 Width="250"
                 FontSize="30"
-                Content="Войти">               
+                Content="Войти"
+                Click="Button_Click">               
             </Button>
         </Grid>
     </Grid>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using diplomnayarrrr.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,9 +17,16 @@ namespace diplomnayarrrr.Views
 {
     public partial class AuthorizationWindow : Window
     {
+        private AuthorizationViewModel _viewModel;
         public AuthorizationWindow()
         {
             InitializeComponent();
+            _viewModel=(AuthorizationViewModel)DataContext;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            _viewModel.Authorization();
         }
     }
 }

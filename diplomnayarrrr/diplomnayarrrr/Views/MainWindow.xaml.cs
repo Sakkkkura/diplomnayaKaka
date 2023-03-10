@@ -1,4 +1,6 @@
-﻿using System;
+﻿using diplomnayarrrr.Entities;
+using diplomnayarrrr.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,9 +19,14 @@ namespace diplomnayarrrr.Views
 {
     public partial class MainWindow : Window
     {
-        public MainWindow()
+        private MainViewModel _viewModel;
+        public MainWindow(User user)
         {
             InitializeComponent();
+            _viewModel = new MainViewModel(user);
+            DataContext = _viewModel;
+
+            this.Title = $"{user.Role.Title}";
         }
     }
 }
